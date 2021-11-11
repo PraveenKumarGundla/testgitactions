@@ -10,4 +10,4 @@ jobs:
         with:
           who-to-greet: praveen kumar gundla
       - name: print first action out put time
-        run: echo "${{steps.first.outputs.time}}"
+        run: echo "${{steps.first.outputs}}"
