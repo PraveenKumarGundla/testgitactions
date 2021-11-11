@@ -11,3 +11,11 @@ jobs:
         run: |
           node -v
           npm -v
+  run-windows-commands:
+    runs-on: windows-latest
+    steps:
+      - name: powershall
+        run: Get-Location
+      - name: bash
+        run: pwd
+        shell: bash
