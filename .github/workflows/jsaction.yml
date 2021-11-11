@@ -1,0 +1,10 @@
+name: JS Action Sample
+on: [push]
+jobs:
+  js-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: js action test
+        uses: actions/hello-world-javascript-action@v1
+        with:
+          who-to-greet: praveen kumar gundla
