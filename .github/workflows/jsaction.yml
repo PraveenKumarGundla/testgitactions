@@ -4,6 +4,16 @@ jobs:
   js-job:
     runs-on: ubuntu-latest
     steps:
+      - name: list files before check out
+        run: |
+          pwd
+          ls
+      - name: check out repo
+        uses: actions/checkout@v1
+      - name: list files after check out
+        run: |
+          pwd
+          ls
       - name: js action test
         id: first
         uses: actions/hello-world-javascript-action@v1
