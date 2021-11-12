@@ -14,3 +14,9 @@ jobs:
         run: dotnet build
       - name: publish step
         run: dotnet publish -c release
+      - name: cf
+        uses: jvalkeal/setup-cf-cli@v0
+        with:
+          version: 6.51.0
+      - name: CF Login
+        run: cf login -a https://api.cf.us10.hana.ondemand.com -u praveengundla.dev@gmail.com  -p AmmaNanna143@
