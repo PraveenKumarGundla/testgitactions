@@ -1,0 +1,16 @@
+name: CI
+
+on:
+  push:
+jobs:
+  my-dotnet-build-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: check out code
+        uses: actions/checkout@v1
+      - name: restore nugets
+        run: dotnet restore
+      - name: build step
+        run: dotnet build
+      - name: publish step
+        run: dotnet publish -c release

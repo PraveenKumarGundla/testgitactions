@@ -1,23 +1,23 @@
-name: JS Action Sample
-on: [push]
-jobs:
-  js-job:
-    runs-on: ubuntu-latest
-    steps:
-      - name: list files before check out
-        run: |
-          pwd
-          ls
-      - name: check out repo
-        uses: actions/checkout@v1
-      - name: list files after check out
-        run: |
-          pwd
-          ls
-      - name: js action test
-        id: first
-        uses: actions/hello-world-javascript-action@v1
-        with:
-          who-to-greet: praveen kumar gundla
-      - name: print first action out put time
-        run: echo "${{steps.first.outputs}}"
+# name: JS Action Sample
+# on: [push]
+# jobs:
+#   js-job:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: list files before check out
+#         run: |
+#           pwd
+#           ls
+#       - name: check out repo
+#         uses: actions/checkout@v1
+#       - name: list files after check out
+#         run: |
+#           pwd
+#           ls
+#       - name: js action test
+#         id: first
+#         uses: actions/hello-world-javascript-action@v1
+#         with:
+#           who-to-greet: praveen kumar gundla
+#       - name: print first action out put time
+#         run: echo "${{steps.first.outputs}}"

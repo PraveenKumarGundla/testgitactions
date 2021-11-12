@@ -1,21 +1,21 @@
-name: shell commands
-on: [push]
+# name: shell commands
+# on: [push]
 
-jobs:
-  run-shell-commands:
-    runs-on: ubuntu-latest
-    steps:
-      - name: echo a string
-        run: echo "praveen kumar gundla"
-      - name: run multiple commands
-        run: |
-          node -v
-          npm -v
-  run-windows-commands:
-    runs-on: windows-latest
-    steps:
-      - name: powershall
-        run: Get-Location
-      - name: bash
-        run: pwd
-        shell: bash
+# jobs:
+#   run-shell-commands:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: echo a string
+#         run: echo "praveen kumar gundla"
+#       - name: run multiple commands
+#         run: |
+#           node -v
+#           npm -v
+#   run-windows-commands:
+#     runs-on: windows-latest
+#     steps:
+#       - name: powershall
+#         run: Get-Location
+#       - name: bash
+#         run: pwd
+#         shell: bash
