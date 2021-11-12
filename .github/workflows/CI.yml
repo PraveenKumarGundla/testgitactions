@@ -19,4 +19,4 @@ jobs:
         with:
           version: 6.51.0
       - name: CF Login
-        run: cf login -a https://api.cf.us10.hana.ondemand.com -u praveengundla.dev@gmail.com  -p AmmaNanna143@
+        run: cf login -a https://api.cf.us10.hana.ondemand.com  --sso
